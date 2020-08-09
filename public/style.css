@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #706fd3;
+}
+.welcome_text{
+    width: 400px;
+}
+.welcome_form input,
+.welcome_form button{
+    display: block;
+    width: 100%;
+}
+.welcome_form input{
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.welcome_form button{
+    font-size: 22px;
+    padding: 20px 0;
+    border: none;
+    border-radius: 100px;
+    background-color: white;
+    color:#706fd3;
+    transition: 0.4s all;
+}
+.welcome_form button:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.welcome_form input:focus,
+.welcome_form button:focus{
+    outline: none;
+}
+.quiz{
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: 60px auto;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+}
+.quiz_header{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; 
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.quiz_body{
+    background-color: #aaa69d;
+    padding: 30px;
+}
+.quiz_user>h4{
+    /* display: flex;
+    align-items: center; */
+    padding: 20px;
+    font-size: 20px;
+}
+.option_grp{
+    list-style-type: none;
+    margin: 30px 0;
+}
+.option{
+    width: 300px;
+    background-color: white;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
+.option:hover{
+    cursor: pointer;
+    border: 2px solid #706fd3;
+}
+.next{
+    background-color: #706fd3;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 27px;
+    font-size: 15px;
+}
+.next:hover{
+    cursor: pointer;
+}
+
+.active{
+    background-color: #706fd3;
+    color: white;
+}
+.award_icon{
+    font-size: 300px !important;
+    color: white;
+
+}
+
+.user_name,
+.user_points{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
